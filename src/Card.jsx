@@ -1,10 +1,14 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
-
-function Card() {
+function Card({ input1, input2 }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
+    <div className="Card">
+      <h2>¡Hola {input1}!</h2>
+      <p>Sabemos que tu color favorito es:</p>
+      <div 
+        className="color-box" 
+        style={{ backgroundColor: input2 }}
+      >
+        {input2}
+      </div>
     </div>
   );
 }
