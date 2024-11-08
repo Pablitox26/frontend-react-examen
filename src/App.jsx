@@ -12,8 +12,15 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const hexPattern = /^#([0-9A-Fa-f]{6})$/;
     
-    if (input1.trim().length >= 3 && input1[0] !== ' ' && input2.length >= 6) {
+    if (
+      input1.trim().length >= 3 &&
+      input1[0] !== ' ' &&
+      input2.length >= 6 &&
+      hexPattern.test(input2)
+    ) {
       setError(false);
       setSubmitted(true);
     } else {

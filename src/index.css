@@ -23,6 +23,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
+    width: 300px;
   }
   
   input[type="text"] {
@@ -33,6 +34,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+    box-sizing: border-box;
+    text-align: center;
   }
   
   button[type="submit"] {
@@ -44,6 +47,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
+    font-size: 1rem;
   }
   
   button[type="submit"]:hover {
